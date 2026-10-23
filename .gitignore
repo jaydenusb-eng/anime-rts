@@ -1,0 +1,15 @@
+# Place files are binary snapshots. The shared place lives in Team Create, and each
+# person's test copy stays on their own computer.
+*.rbxl
+*.rbxlx
+*.rbxl.lock
+*.rbxlx.lock
+
+# Operating-system clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor and tool output
+.vscode/
+sourcemap.json

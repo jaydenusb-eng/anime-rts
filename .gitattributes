@@ -1,0 +1,7 @@
+# Store and check out every text file with LF line endings on every computer.
+# Studio scripts use LF, so this keeps Git, Script Sync and Studio in agreement.
+* text=auto eol=lf
+
+# Roblox binary place and model files.
+*.rbxl binary
+*.rbxm binary
