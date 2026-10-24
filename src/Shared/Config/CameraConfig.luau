@@ -11,7 +11,7 @@ return {
 	Yaw = 0,
 	-- Distance (studs) from the camera to the point on the ground it looks at.
 	MinZoom = 40,
-	MaxZoom = 160,
+	MaxZoom = 240, -- the Hidden Valley map is 1080 studs across
 	DefaultZoom = 100,
 	-- Zoom change per mouse-wheel notch.
 	ZoomStep = 12,

@@ -17,8 +17,11 @@ local Net = {}
 Net.Remotes = {
 	-- Client -> server: "please give these units this order".
 	UnitCommand = "UnitCommand",
-	-- Server -> client: short messages about an order ("Can't reach that spot.").
+	-- Server -> client: short messages about an order ("Can't reach that spot.") or a
+	-- team choice ("Red Team is already taken.").
 	CommandFeedback = "CommandFeedback",
+	-- Client -> server: "put me in this slot" (a slot number from GameConfig.Slots).
+	ChooseTeam = "ChooseTeam",
 }
 
 -- Order kinds the server understands. Later milestones add Stop, Attack, AttackMove, Rally...

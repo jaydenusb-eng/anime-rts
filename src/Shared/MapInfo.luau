@@ -4,11 +4,12 @@
 	play area is and where each player starts. Map designers move these parts in
 	Studio; no map coordinates are written into code.
 
-	Expected layout (tools/BuildTestMap.luau creates it):
+	Expected layout (ServerStorage.MapTools.BuildNinjaVillageMap creates it):
 	  Workspace.Map
 	    Ground       floor parts units walk on
 	    Obstacles    anything units must path around
 	    Boundary     walls around the play area
+	    Decor        optional; non-colliding props (roofs, banners) that never block units
 	    Markers
 	      PlayArea      invisible, unrotated part. Its X/Z footprint is the playable
 	                    area and its bottom face is ground level.
@@ -29,7 +30,7 @@ end
 local function getPlayAreaPart(): BasePart
 	local markers = getMarkers()
 	local playArea = markers and markers:FindFirstChild("PlayArea")
-	assert(playArea, "Workspace.Map.Markers.PlayArea is missing. Run tools/BuildTestMap.luau in Studio.")
+	assert(playArea, "Workspace.Map.Markers.PlayArea is missing. Run ServerStorage.MapTools.BuildNinjaVillageMap in Studio.")
 	return playArea :: BasePart
 end
 

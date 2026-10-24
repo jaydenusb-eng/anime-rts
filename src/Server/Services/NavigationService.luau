@@ -443,7 +443,7 @@ function NavigationService.init()
 	local obstacles = MapInfo.getFolder("Obstacles")
 	local boundary = MapInfo.getFolder("Boundary")
 	assert(ground and obstacles and boundary,
-		"Workspace.Map needs Ground, Obstacles and Boundary folders. Run tools/BuildTestMap.luau in Studio.")
+		"Workspace.Map needs Ground, Obstacles and Boundary folders. Run ServerStorage.MapTools.BuildNinjaVillageMap in Studio.")
 	groundParams.FilterDescendantsInstances = { ground }
 	blockerRayParams.FilterDescendantsInstances = { obstacles, boundary }
 	blockerOverlapParams.FilterDescendantsInstances = { obstacles, boundary }
