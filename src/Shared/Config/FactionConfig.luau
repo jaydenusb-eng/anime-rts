@@ -12,13 +12,15 @@ return {
 		displayName = "Faction A",
 		-- The army each player of this faction starts with (Milestone 1 test army).
 		startingArmy = {
-			{ unitType = "FA_Trooper", count = 5 },
+			{ unitType = "FA_NinjaJonin", count = 1 },
+			{ unitType = "FA_NinjaScout", count = 1 },
+			{ unitType = "FA_NinjaKunoichi", count = 1 },
 		},
 	},
 	FactionB = {
 		displayName = "Faction B",
 		startingArmy = {
-			{ unitType = "FB_Trooper", count = 5 },
+			{ unitType = "FB_Trooper", count = 3 },
 		},
 	},
 }

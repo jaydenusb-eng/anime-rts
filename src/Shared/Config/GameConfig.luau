@@ -9,11 +9,16 @@ local GameConfig = {}
 -- Milestone 1 is a 1v1. Team matches raise this later.
 GameConfig.MaxPlayers = 2
 
--- What each player slot gets. Slot 1 starts on the west side of the map, slot 2 on the east.
+-- What each player slot gets. On the Hidden Valley map slot 1 starts in the north-east
+-- compound and slot 2 in the south-east fortress (Workspace.Map.Markers.StartPoints).
+-- `name` labels the slot's team button in the HUD.
 GameConfig.Slots = {
-	{ faction = "FactionA", color = Color3.fromRGB(64, 140, 255) },
-	{ faction = "FactionB", color = Color3.fromRGB(235, 70, 60) },
+	{ name = "Blue Team", faction = "FactionA", color = Color3.fromRGB(64, 140, 255) },
+	{ name = "Red Team", faction = "FactionB", color = Color3.fromRGB(235, 70, 60) },
 }
+
+-- Seconds a player must wait between team switches.
+GameConfig.TeamSwitchCooldown = 2
 
 GameConfig.Map = {
 	-- Name of the folder in Workspace that holds the current map.
